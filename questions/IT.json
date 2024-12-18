@@ -274,6 +274,456 @@
           "The firewall will only allow data to flow from the website to the viewer’s machine."
         ],
         "correct_answer": "Does not prevent an authorised user from using the system maliciously."
+      },
+      {
+        "question": "Which of the following is an input device?",
+        "options": [
+          "Barcode reader",
+          "Headphones",
+          "Printer",
+          "Speaker"
+        ],
+        "correct_answer": "Barcode reader"
+      },
+      {
+        "question": "Which of the following is safe to remove whilst a laptop is running?",
+        "options": [
+          "External hard drive",
+          "Hard drive",
+          "RAM",
+          "ROM"
+        ],
+        "correct_answer": "External hard drive"
+      },
+      {
+        "question": "Which of the following is an example of a port?",
+        "options": [
+          "SAS",
+          "SATA",
+          "SCSI",
+          "SMS"
+        ],
+        "correct_answer": "SATA"
+      },
+      {
+        "question": "Which of the following connection technologies requires line of sight?",
+        "options": [
+          "Bluetooth",
+          "GSM",
+          "Laser",
+          "WiFi"
+        ],
+        "correct_answer": "Laser"
+      },
+      {
+        "question": "Which of the following is not part of the Internet of Things?",
+        "options": [
+          "Smart bulb",
+          "Smart iron",
+          "Smart refrigerator",
+          "Smart thermostat"
+        ],
+        "correct_answer": "Smart iron"
+      },
+      {
+        "question": "Which of the following is an example of an engine management system in a car?",
+        "options": [
+          "Embedded",
+          "Freeware",
+          "Off the shelf",
+          "Open source"
+        ],
+        "correct_answer": "Embedded"
+      },
+      {
+        "question": "Which of the following is part of an Integrated Design Environment (IDE) that converts instructions into machine code?",
+        "options": [
+          "Compiler",
+          "Debugger",
+          "Interpreter",
+          "Text editor"
+        ],
+        "correct_answer": "Compiler"
+      },
+      {
+        "question": "Which of the following best describes a personal computer (PC) used at home?",
+        "options": [
+          "Multiuser multitasking",
+          "Multiuser single application",
+          "Single user multitasking",
+          "Single user single application"
+        ],
+        "correct_answer": "Single user multitasking"
+      },
+      {
+        "question": "Which communication method would be most appropriate for discussing a new plane design?",
+        "options": [
+          "Email",
+          "Instant messaging",
+          "Teleconference",
+          "Video conference"
+        ],
+        "correct_answer": "Video conference"
+      },
+      {
+        "question": "Which of the following is not a feature of an Internet Protocol (IP)?",
+        "options": [
+          "Forwarding packets to individual computers.",
+          "Putting packets back together in order.",
+          "Sending packets to the Domain.",
+          "Sending packets to the Gateway."
+        ],
+        "correct_answer": "Sending packets to the Domain."
+      },
+      {
+        "question": "Complete the following sentence: _________ virtualisation typically uses a mixture of private and public cloud services.",
+        "options": [
+          "Client",
+          "Hybrid",
+          "Server",
+          "Storage"
+        ],
+        "correct_answer": "Hybrid"
+      },
+      {
+        "question": "Which of the following is an element of a Class C network that will default to 255.255.255.0?",
+        "options": [
+          "Default gateway",
+          "Host IP address",
+          "Local IP address",
+          "Subnet mask"
+        ],
+        "correct_answer": "Subnet mask"
+      },
+      {
+        "question": "Complete the following sentence: A token ring network is an example of a ______________ .",
+        "options": [
+          "LAN",
+          "MAN",
+          "PSTN",
+          "WAN"
+        ],
+        "correct_answer": "LAN"
+      },
+      {
+        "question": "Which of the following is not a characteristic of an ADSL connection?",
+        "options": [
+          "Faster upload than download rate",
+          "Fibre optic connection",
+          "Microfilter installed on the line",
+          "Simultaneous voice and data connection"
+        ],
+        "correct_answer": "Fibre optic connection"
+      },
+      {
+        "question": "Which of the following is not a common characteristic of helpdesk software?",
+        "options": [
+          "Sales ordering process",
+          "Service level agreement",
+          "Technician assignment",
+          "Ticketing"
+        ],
+        "correct_answer": "Sales ordering process"
+      },
+      {
+        "question": "Which of the following is a limitation of desktop computers?",
+        "options": [
+          "Desktop computers do not require a battery.",
+          "Desktop computers have large screens compared to other similar devices.",
+          "Desktop computers have smaller physical storage than other similar devices.",
+          "Desktop computers take up a larger physical space than similar devices."
+        ],
+        "correct_answer": "Desktop computers take up a larger physical space than similar devices."
+      },
+      {
+        "question": "James has to send a photograph from his mobile phone to his brother’s mobile phone. Which of the following best justifies the use of Bluetooth® technology for this purpose?",
+        "options": [
+          "An ad hoc network can be established between the two devices.",
+          "Bluetooth® connections cannot be hacked.",
+          "Bluetooth® connections work over a long range.",
+          "The data transferred will be checked for viruses automatically."
+        ],
+        "correct_answer": "An ad hoc network can be established between the two devices."
+      },
+      {
+        "question": "Which of the following is a reason why a publishing house may decide not to share the source code for the software it publishes?",
+        "options": [
+          "To allow users to use the software on multiple devices.",
+          "To allow users to use the software on multiple platforms.",
+          "To improve the quality of future software upgrades.",
+          "To make the software more difficult to copy."
+        ],
+        "correct_answer": "To make the software more difficult to copy."
+      },
+      {
+        "question": "RK Manufacturing uses CAD/CAM software as part of its manufacturing process. Which of the following is a reason why RK Manufacturing uses CAD/CAM software?",
+        "options": [
+          "CAM software includes templates that can help the design process.",
+          "The completed products are more accurate than those produced by human control.",
+          "The costs of manufacturing are shared amongst many different organisations.",
+          "The range of physical tools available for the machines is wider."
+        ],
+        "correct_answer": "The completed products are more accurate than those produced by human control."
+      },
+      {
+        "question": "Which of the following is a feature of an off-the-shelf operating system?",
+        "options": [
+          "Advanced users may see the source code.",
+          "It is made to the user requirements.",
+          "It automatically provides regular security updates.",
+          "Non-essential functionality is removed."
+        ],
+        "correct_answer": "It automatically provides regular security updates."
+      },
+      {
+        "question": "ATAT Printing has travelling engineers who carry out support visits at customer sites. Which of the following communication methods is best suited for use by an engineer wanting to communicate privately with the main office, in real time?",
+        "options": [
+          "Email",
+          "Instant Messaging",
+          "Social media",
+          "Written letter"
+        ],
+        "correct_answer": "Instant Messaging"
+      },
+      {
+        "question": "Which of the following is a purpose of Simple Network Management Protocol (SNMP)?",
+        "options": [
+          "To collect information from network devices",
+          "To manage data packet transfer across a network",
+          "To manage the transfer of data across the World Wide Web",
+          "To provide checksums for data integrity"
+        ],
+        "correct_answer": "To collect information from network devices"
+      },
+      {
+        "question": "ATAT Printing uses software so that staff can access a simulation of their office desktop whilst working away from the office. This is an example of which of the following?",
+        "options": [
+          "Client virtualisation",
+          "End user certification",
+          "Peer-to-peer networking",
+          "Teleconferencing"
+        ],
+        "correct_answer": "Client virtualisation"
+      },
+      {
+        "question": "What is the purpose of an IP address?",
+        "options": [
+          "To allow host identification",
+          "To identify the operating system on the computer",
+          "To restrict the number of clients who can connect to the host server",
+          "To split the network into subnetworks"
+        ],
+        "correct_answer": "To allow host identification"
+      },
+      {
+        "question": "Colin has to gather data on the IT Support team’s performance over the past year and pass this information to his manager. Which would be the most appropriate method of communication?",
+        "options": [
+          "Letter",
+          "Report",
+          "Social media",
+          "Telephone"
+        ],
+        "correct_answer": "Report"
+      },
+      {
+        "question": "Maisie is setting up a meeting for a large group of people. During the meeting, she has to deliver a lot of information as quickly and as clearly as possible. Which of the following is the most suitable type of software to use for this purpose?",
+        "options": [
+          "Email",
+          "Instant messaging",
+          "Presentation",
+          "Word processing"
+        ],
+        "correct_answer": "Presentation"
+      },
+      {
+        "question": "Rebecca has received a suspicious email from someone pretending to be from her bank. What sort of threat is this?",
+        "options": [
+          "Data theft",
+          "Eavesdropping",
+          "Phishing",
+          "Trojan"
+        ],
+        "correct_answer": "Phishing"
+      },
+      {
+        "question": "Which of the following is a physical security method?",
+        "options": [
+          "Antivirus",
+          "Encryption",
+          "Firewall",
+          "Security token"
+        ],
+        "correct_answer": "Security token"
+      },
+      {
+        "question": "Which of the following is not a feature of effective anti-virus software?",
+        "options": [
+          "Automated data backup",
+          "Malware detection",
+          "Parental controls",
+          "Social media protection"
+        ],
+        "correct_answer": "Automated data backup"
+      },
+      {
+        "question": "Which of the following is a suitable method of physical destruction?",
+        "options": [
+          "Defragmenting",
+          "Degaussing",
+          "Disk shredding",
+          "Overwriting"
+        ],
+        "correct_answer": "Disk shredding"
+      },
+      {
+        "question": "Which wireless technology requires ‘pairing’?",
+        "options": [
+          "Bluetooth",
+          "Laser",
+          "Microwave",
+          "Wifi"
+        ],
+        "correct_answer": "Bluetooth"
+      },
+      {
+        "question": "When using troubleshooting tools, a log can help to:",
+        "options": [
+          "Record hardware faults",
+          "Fix hardware faults",
+          "Quarantine hardware faults",
+          "Remove hardware faults"
+        ],
+        "correct_answer": "Record hardware faults"
+      },
+      {
+        "question": "Which productivity software is the most appropriate for creating a mail merge letter template?",
+        "options": [
+          "Database",
+          "Email",
+          "Spreadsheet",
+          "Word processor"
+        ],
+        "correct_answer": "Word processor"
+      },
+      {
+        "question": "Which business software is most suitable for creating a safety poster?",
+        "options": [
+          "CAD",
+          "CAM",
+          "MIS",
+          "DTP"
+        ],
+        "correct_answer": "DTP"
+      },
+      {
+        "question": "Which communication software enables several users to participate in a meeting over the phone?",
+        "options": [
+          "Messaging",
+          "Personal assistants",
+          "Teleconference",
+          "Video conference"
+        ],
+        "correct_answer": "Teleconference"
+      },
+      {
+        "question": "Which software troubleshooting tool tests computer performance against an established norm?",
+        "options": [
+          "Baseline",
+          "Error logs",
+          "Event logs",
+          "Installable tools"
+        ],
+        "correct_answer": "Baseline"
+      },
+      {
+        "question": "Which of the following is an error reporting protocol?",
+        "options": [
+          "ICMP",
+          "FTP",
+          "HTTP",
+          "SMTP"
+        ],
+        "correct_answer": "ICMP"
+      },
+      {
+        "question": "A business stores its data off-site on computers run by another company. This is an example of:",
+        "options": [
+          "Client virtualisation",
+          "Cloud virtualisation",
+          "Server virtualisation",
+          "Storage virtualisation"
+        ],
+        "correct_answer": "Cloud virtualisation"
+      },
+      {
+        "question": "Which business system allows managers to organise and manage departments?",
+        "options": [
+          "Customer relationship management",
+          "Helpdesk",
+          "Management information system",
+          "Sales ordering process"
+        ],
+        "correct_answer": "Management information system"
+      },
+      {
+        "question": "Which of the following methods allows participants to use body language to aid communication?",
+        "options": [
+          "Emails",
+          "Group discussions",
+          "Telephone",
+          "Teleconferencing"
+        ],
+        "correct_answer": "Teleconferencing"
+      },
+      {
+        "question": "Which of the following does not demonstrate readiness to work through appearance?",
+        "options": [
+          "Appropriate clothing",
+          "Can-do attitude",
+          "Combed hair",
+          "Use of deodorant"
+        ],
+        "correct_answer": "Can-do attitude"
+      },
+      {
+        "question": "Which of the following is an ethical issue that businesses must consider?",
+        "options": [
+          "Disaster planning",
+          "Health and Safety",
+          "Social engineering",
+          "Use of Information"
+        ],
+        "correct_answer": "Use of Information"
+      },
+      {
+        "question": "Which of the following is attempting to gain unauthorised access to a computer system?",
+        "options": [
+          "Eavesdropping",
+          "Hacking",
+          "Interception",
+          "Phishing"
+        ],
+        "correct_answer": "Hacking"
+      },
+      {
+        "question": "Which physical security method requires the user to have a key or a code?",
+        "options": [
+          "Fingerprint scan",
+          "Iris scan",
+          "Lock",
+          "RFID"
+        ],
+        "correct_answer": "Lock"
+      },
+      {
+        "question": "Which digital security method enables the system administrator to allow users access to different data or software on a system?",
+        "options": [
+          "Anti-virus",
+          "Encryption",
+          "Permissions",
+          "Usernames & Passwords"
+        ],
+        "correct_answer": "Permissions"
       }
   ]
 }
