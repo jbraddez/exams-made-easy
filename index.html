@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Jacob Bradley">
+    <meta name="description" content="Exams Made Easy is made by a college student to make revising for exams easier, feel more rewarding and less boring. You can make a timetable or try out a quiz. Test yourself and add your own resources too.">
+    <meta name="keywords" content="Exams made Easy, exams, easy, made, jacob bradley, revision made easy, revision, revising, studying, college, A-levels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="./images/webicon.png">
+    <link rel="icon" href="./images/webicon.png">
+    <title>Exams Made Easy | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- Apple tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Exams Made Easy">
+    <link rel="apple-touch-icon" href="./images/webicon.png" sizes="180x180">
+</head>
+<body>
+
+    <header>
+            <a class="headlink" href="./notes.html">Notes</a>
+            <a class="headlink" href="./timetable.html">Timetable</a>
+        <a class="logoname" href="/">
+            <h1>Exams Made Easy</h1>
+        </a>
+            <a class="headlink" href="./resources.html">Resources</a>
+            <a class="headlink" href="./quiz.html">Quiz</a>
+    </header>
+
+    <main>
+        <section class="landing">
+            <h3 id="welcome">Welcome<span id="showname"></span>!</h3>
+            <div class="landimgcont">
+                <img src="./images/temp-landing.jpg" alt="temporary">
+            </div>
+        </section>
+
+
+        <section class="landing-cards">
+            <div class="l-card">
+                <img src="./images/struggle.svg" alt="Stickman doing unsure pose with a thought bubble above their head containing a question mark.">
+                <p>Do you get struggle revising or sticking to a timetable? Exams Made Easy has numerous features such as a timetable that sends notifications, a quiz and more!</p>
+            </div>
+
+            <div class="l-card">
+                <p style="text-align: right;">Worried about sharing your data? All data that can be is stored on your device only, so it can't be accessed by anyone including us!</p>
+                <img src="./images/data.svg" alt="A save/download icon representing data storage">
+            </div>
+            
+            <div class="l-card">
+                <img style="scale: 0.9;" src="./images/notes.svg" alt="A notebook">
+                <p>With Exams Made Easy you can take notes down to easily organise your ideas and notes to revise from allowing for easy notetaking in different subjects.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h5>Exams Made Easy by Jacob Bradley</h5>
+    </footer>
+
+    <form id="name-notification">
+        <p>Hi there! What's your first name?</p>
+        <input required type="text" id="name-input" placeholder="e.g. Jacob">
+        <p class="tinytext">*This is for personalisation purposes only, this data is stored on your device locally.</p>
+        <button type="submit" id="name-button">Submit</button>
+        <div class="popupcross" onclick="hidePopup()" id="indexpopupcross">&times;</div>
+    </form>
+
+    <script>
+        function hidePopup() {
+            document.getElementById("name-notification").style.display = "none";
+            sessionStorage.setItem("popupDismissed", "true");
+        }
+
+        function personaliseWelcome() {
+            const storedData = localStorage.getItem("userData");
+
+            if (storedData) {
+                const userData = JSON.parse(storedData);
+                const name = userData.firstName;
+                document.getElementById("showname").innerText = ", " + name;
+
+                document.getElementById("name-notification").style.display = "none";
+            }
+        }
+
+        function checkPopup() {
+            const popupDismissed = sessionStorage.getItem("popupDismissed");
+            const storedData = localStorage.getItem("userData");
+
+            if (popupDismissed || storedData) {
+                document.getElementById("name-notification").style.display = "none";
+            } else {
+                document.getElementById("name-notification").style.display = "block";
+            }
+        }
+
+        document.getElementById("name-notification").addEventListener("submit", function (e) {
+            e.preventDefault(); 
+            const name = document.getElementById("name-input").value.trim();
+            const formattedName = name.charAt(0).toUpperCase() + name.slice(1);
+            const userData = {
+                firstName: formattedName
+            };
+            localStorage.setItem("userData", JSON.stringify(userData));
+            hidePopup(); 
+            personaliseWelcome();
+        });
+
+        checkPopup();
+        personaliseWelcome();
+    </script>
+</body>
+</html>

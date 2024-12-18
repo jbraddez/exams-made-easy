@@ -1,0 +1,279 @@
+{
+ "questions": [
+    {
+      "question": "Which of these items is ordered correctly, smallest to largest?",
+      "options": [
+        "giga, kilo, mega, tera",
+        "kilo, giga, mega, tera",
+        "kilo, mega, giga, tera",
+        "tera, giga, kilo, mega"
+      ],
+      "correct_answer": "kilo, mega, giga, tera"
+    },
+    {
+      "question": "How many bits in 1 kibibit?",
+      "options": [
+        "1000",
+        "1024",
+        "2000",
+        "2048"
+      ],
+      "correct_answer": "1024"
+    },
+    {
+      "question": "Which of these items is a biometric security method?",
+      "options": [
+        "Iris",
+        "Password",
+        "RFID",
+        "Token"
+      ],
+      "correct_answer": "Iris"
+    },
+    {
+      "question": "Which of these items is an advantage of a teleconference?",
+      "options": [
+        "Can hear how something is said",
+        "Can remove communication barriers",
+        "Can see visual queues",
+        "Can send documents electronically"
+      ],
+      "correct_answer": "Can hear how something is said"
+    },
+    {
+      "question": "Which of these items is not a function of an operating system?",
+      "options": [
+        "Checking memory before the device boots",
+        "Displaying data on a screen",
+        "Handling what has been typed in on a keyboard",
+        "Memory management"
+      ],
+      "correct_answer": "Checking memory before the device boots"
+    },
+    {
+      "question": "Which of these items are examples of whistle blowing?",
+      "options": [
+        "Informing a manager that the backup of the computer system has not completed to schedule",
+        "Sharing your password to the computer system with a colleague",
+        "Talking about something that happened at work with family at home",
+        "Telling a manager about an employee’s serious breach of health and safety procedures"
+      ],
+      "correct_answer": "Telling a manager about an employee’s serious breach of health and safety procedures"
+    },
+    {
+      "question": "Which device is needed to connect a computer to an ADSL line?",
+      "options": [
+        "Hub",
+        "Modem",
+        "Router",
+        "Switch"
+      ],
+      "correct_answer": "Modem"
+    },
+    {
+      "question": "Which of these is not a characteristic of a token ring network?",
+      "options": [
+        "Device must seize token to communicate",
+        "Every device on network inspects the token",
+        "Token moves between devices in a random order",
+        "Token moves one way around the ring"
+      ],
+      "correct_answer": "Token moves between devices in a random order"
+    },
+    {
+      "question": "Which protocol is used to transfer email from server to server?",
+      "options": [
+        "FTP",
+        "POP",
+        "SMTP",
+        "SNMP"
+      ],
+      "correct_answer": "SMTP"
+    },
+    {
+      "question": "Convert 66 in decimal to 8 bit binary.",
+      "options": [
+        "01000000",
+        "01000010",
+        "10001000",
+        "10111101"
+      ],
+      "correct_answer": "01000010"
+    },
+    {
+      "question": "Convert 100 in decimal to hexadecimal.",
+      "options": [
+        "24",
+        "25",
+        "64",
+        "65"
+      ],
+      "correct_answer": "64"
+    },
+    {
+      "question": "Which of these does not need configuring to allow a device to communicate on the Internet?",
+      "options": [
+        "Default gateway",
+        "DNS server",
+        "IP address",
+        "Subnet mask"
+      ],
+      "correct_answer": "DNS server"
+    },
+    {
+      "question": "Which of these is not a wireless technology?",
+      "options": [
+        "Bluetooth",
+        "Fibre",
+        "Infrared",
+        "Laser"
+      ],
+      "correct_answer": "Fibre"
+    },
+    {
+      "question": "Which of these communication methods would be most appropriate for tendering your resignation?",
+      "options": [
+        "Letter",
+        "Social networking post",
+        "Text message",
+        "Video chat"
+      ],
+      "correct_answer": "Letter"
+    },
+    {
+        "question": "Which of the following best describes the purpose of a processor component in a computer?",
+        "options": [
+          "To control user access to the data on the computer.",
+          "To manage the main functions and operations of the computer.",
+          "To display calculations.",
+          "To store data in the computer."
+        ],
+        "correct_answer": "To manage the main functions and operations of the computer."
+      },
+      {
+        "question": "How do quantum computer systems differ from traditional computer systems?",
+        "options": [
+          "Quantum computers do not rely on binary logic.",
+          "Quantum computers do not require secondary storage.",
+          "Quantum computers use Open Source Operating Systems.",
+          "Quantum computers utilise anti-static to minimise energy consumption."
+        ],
+        "correct_answer": "Quantum computers do not rely on binary logic."
+      },
+      {
+        "question": "Which of the following should be considered when setting up a microwave network?",
+        "options": [
+          "All devices on the network must be in line of sight.",
+          "Microwaves can only be transmitted using a digital format.",
+          "Microwave nodes should not be set up in areas of dense population.",
+          "Microwave signals are not effective beyond a range of 1800 metres."
+        ],
+        "correct_answer": "All devices on the network must be in line of sight."
+      },
+      {
+        "question": "How many bits are included in a nibble?",
+        "options": ["1", "2", "4", "8"],
+        "correct_answer": "4"
+      },
+      {
+        "question": "Which of the following may be a disadvantage to a business of using Open Source software?",
+        "options": [
+          "Competitors may be using the same software.",
+          "It may include lots of features.",
+          "There may be an increased security risk as the source code can be edited by others.",
+          "The business is not tied into one vendor’s system."
+        ],
+        "correct_answer": "There may be an increased security risk as the source code can be edited by others."
+      },
+      {
+        "question": "Which of the following is an advantage of a multiprocessor operating system?",
+        "options": [
+          "Every task is performed by the same processor.",
+          "Multiprocessor systems are easier to design.",
+          "Failure in one processor will result in complete system failure.",
+          "The throughput of data is usually greater than a single processor system."
+        ],
+        "correct_answer": "The throughput of data is usually greater than a single processor system."
+      },
+      {
+        "question": "Which of the following is the most likely cause of a slow running application on a computer?",
+        "options": [
+          "Insufficient Active Directory capacity.",
+          "Insufficient ports on the motherboard.",
+          "Insufficient ROM capacity.",
+          "Insufficient RAM capacity."
+        ],
+        "correct_answer": "Insufficient RAM capacity."
+      },
+      {
+        "question": "Which of the following services is not provided by the User Data Protocol (UDP)?",
+        "options": [
+          "Checksum capability to check on package delivery.",
+          "Packet transmission.",
+          "Packet retransmission.",
+          "Providing port numbers."
+        ],
+        "correct_answer": "Packet retransmission."
+      },
+      {
+        "question": "Which of the following is an example of a physical method of improving the security of information?",
+        "options": [
+          "Defragmenting the main server hard drive.",
+          "Installing anti-virus software.",
+          "Locking server room doors.",
+          "Backing up data."
+        ],
+        "correct_answer": "Locking server room doors."
+      },
+      {
+        "question": "Which of the following attempts to gain information does not use social engineering?",
+        "options": [
+          "“Hi, I am new and don’t understand how to access the portal, Andrea says I need a token code but I don’t know what this is.”",
+          "“Hi, I am not at work at the moment, but have been locked out of my machine. Could you reset my password please so I can complete this report for the boss?”",
+          "“The boss has asked for this information. Do you really want to upset her?”",
+          "“What is the security code needed to access the Web Server?”"
+        ],
+        "correct_answer": "“What is the security code needed to access the Web Server?”"
+      },
+      {
+        "question": "Which of the following is an advantage of using RFID technology rather than a barcode to track packages?",
+        "options": [
+          "Packages do not need to be in line of sight of the reader to be identified.",
+          "RFID tags do not need a source of power.",
+          "RFID technology does not need specialist equipment to identify packages.",
+          "Metal interferes with the RFID signals."
+        ],
+        "correct_answer": "Packages do not need to be in line of sight of the reader to be identified."
+      },
+      {
+        "question": "Which of the following best describes one reason why privacy screens are attached to monitors?",
+        "options": [
+          "To comply with the Copyright, Design and Patents Act 1988.",
+          "To improve the working conditions of staff.",
+          "To protect data and information from being seen by unauthorised viewers.",
+          "To reduce glare on the screens."
+        ],
+        "correct_answer": "To protect data and information from being seen by unauthorised viewers."
+      },
+      {
+        "question": "Which of the following best describes how overwriting old data protects it from being accessed?",
+        "options": [
+          "All data held on the hard disc is deleted.",
+          "The data held in each bit on the hard disc is replaced with fresh data.",
+          "The data is encrypted so that it cannot be accessed.",
+          "The file names are changed so that the data cannot be found."
+        ],
+        "correct_answer": "The data held in each bit on the hard disc is replaced with fresh data."
+      },
+      {
+        "question": "Which of the following is a weakness of using a firewall to protect a website?",
+        "options": [
+          "Does not prevent an authorised user from using the system maliciously.",
+          "The firewall restricts access only to those who have previously been on the website.",
+          "The firewall will only allow data to flow from the viewer’s machine to the website.",
+          "The firewall will only allow data to flow from the website to the viewer’s machine."
+        ],
+        "correct_answer": "Does not prevent an authorised user from using the system maliciously."
+      }
+  ]
+}

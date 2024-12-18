@@ -1,0 +1,104 @@
+#name-notification{
+    padding: 10px;
+    border: 1px solid #242827;
+    border-radius: 13px;
+    width: fit-content;
+    max-width: 80%;
+    background: rgba(70, 165, 217,0.6);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 5;
+}
+
+#name-notification input{
+    border-radius: 5px;
+    background: rgba(247, 249, 250, 0.6);
+    outline: none !important;
+    border: 1px solid #242827;
+    padding: 3px;
+}
+
+#name-notification button{
+    background: rgb(97, 225, 97);
+    border-radius: 5px;
+    border: 1px solid #242827;
+    padding: 3px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.landing-cards{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#welcome{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.l-card{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-card img{
+    max-width: 120px;
+    fill: #212dab;
+}
+
+.landimgcont{
+    width: 100%;
+    aspect-ratio: 2/1;
+    max-width: 700px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #242827;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.landimgcont img{
+    width: 100%;
+    transform: translateY(-17.5%);
+    position: relative;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    .l-card img{
+        max-width: 90px;
+    }
+    .l-card p{
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 461px){
+    .l-card img{
+        max-width: 50px;
+    }
+    .l-card p{
+        font-size: 0.7rem;
+    }
+}
