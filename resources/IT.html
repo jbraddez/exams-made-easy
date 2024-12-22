@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Jacob Bradley">
+    <meta name="description" content="Exams Made Easy is made by a college student to make revising for exams easier, feel more rewarding and less boring. You can make a timetable or try out a quiz. Test yourself and add your own resources too.">
+    <meta name="keywords" content="Exams made Easy, exams, easy, made, jacob bradley, revision made easy, revision, revising, studying, college, A-levels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="/images/webicon.png">
+    <link rel="icon" href="/images/webicon.png">
+    <title>Exams Made Easy | Resources</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/resources.css">
+    <!-- Apple tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Exams Made Easy">
+    <link rel="apple-touch-icon" href="/images/webicon.png" sizes="180x180">
+</head>
+<body>
+
+    <header>
+            <a class="headlink" href="/notes.html">Notes</a>
+            <a class="headlink" href="/timetable.html">Timetable</a>
+        <a class="logoname" href="/">
+            <h1>Exams Made Easy</h1>
+        </a>
+            <a class="headlink" href="/resources.html">Resources</a>
+            <a class="headlink" href="/quiz.html">Quiz</a>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Subjects</h2>
+            <div class="subject-links"></div>
+        </aside>
+        <section class="resources">
+            <h2>Applied IT - OCR</h2>
+            <hr>
+            <div class="resource-notes">
+                <p>Click the links for the following resources</p>
+                <ul>
+                    Booklets:
+                    <li><a href="https://www.ocr.org.uk/Images/267350-fundamentals-of-it.pdf">Unit 1 Fundamentals of IT</a></li>
+                    <li><a href="https://www.ocr.org.uk/Images/267351-global-information.pdf">Unit 2 Global Information</a></li>
+                    <li><a href="https://www.ocr.org.uk/Images/267352-cyber-security.pdf">Unit 3 Cyber Security</a></li>
+                </ul>
+                <ul>Past Papers:
+                    <li><a href="https://www.ocr.org.uk/qualifications/cambridge-technicals/information-technology/assessment/#level-3">IT Level 3 Past Papers</a></li>
+                </ul>
+            </div>
+
+             <h2>Manage Resources</h2>
+             <button id="toggleEditMode">Enter Edit Mode</button>
+             
+             <div id="addOptions" style="display: none;">
+                <button class="add-item" id="addList">Add List</button>
+             </div>
+             <ul id="resourceList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <h5>Exams Made Easy by Jacob Bradley</h5>
+    </footer>
+
+    <script src="/resources/sublinks.js"></script>
+    <script src="/resources/resourceManager.js"></script>
+</body>
+</html>

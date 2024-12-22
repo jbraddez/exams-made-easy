@@ -1,0 +1,194 @@
+main{
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1400px;
+    border: 1px solid #242827;
+    border-radius: 16px;
+    display: flex;
+    height: 80svh;
+    margin: 40px 0;
+    background: rgba(254,254,254,0.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+
+aside{
+    width: 25%;
+    border-right: 1px solid #242827;
+    height: 100%;
+    overflow: scroll;
+    background: rgba(70,165,217, 0.6);
+    border-radius: 16px 0 0 16px;
+    min-width: 90px;
+}
+
+aside h2{
+    text-align: center;
+    padding: 4px;
+}
+
+.subject-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.subject-links a{
+    border-bottom: 1px solid #242827;
+    transition: 300ms ease-in-out;
+    padding: 5px;
+}
+
+.subject-links a:nth-child(1){
+    border-top: 1px solid #242827;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+.resources{
+    padding: 10px;
+    width: 75%;
+}
+
+.resources>h2{
+    text-align: center;
+}
+
+.resources a{
+    color: #46a5d9;
+}
+
+ul li{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+ul li:nth-child(1){
+    margin-top: 0;
+}
+
+ul{
+    margin: 10px;
+}
+
+#respagetext{
+    margin: 15px 5px;
+}
+
+p{
+    margin: 4px;
+}
+
+.resource-notes, .resources{
+    overflow: scroll;
+}
+
+#toggleEditMode {
+    background-color: #46a5d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#resourceList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#resourceList li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resourceList li.editable {
+    border: 1px dashed #46a5d9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#resourceList li .controls {
+    display: none;
+    margin-left: 10px;
+}
+
+#resourceList li.editable .controls {
+    display: inline-flex;
+}
+
+.controls button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#addOptions {
+    margin-top: 15px;
+}
+
+.add-item {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: darkred;
+}
+
+
+@media screen and (min-width: 769px){
+    .subject-links a:hover{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    aside h2{
+        font-size: 1.1rem;
+    }
+    .subject-links a{
+        font-size: 0.8rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 481px){
+    aside h2{
+        font-size: 1rem;
+    }
+    p,ul li{
+        font-size: 0.7rem;
+    }
+    .subject-links a{
+        font-size: 0.75rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+}
