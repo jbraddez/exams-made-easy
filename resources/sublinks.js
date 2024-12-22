@@ -8,7 +8,7 @@ const subjectLinksDiv = document.querySelector('.subject-links');
 
 links.forEach(link => {
     const a = document.createElement('a');
-    a.href = "https://jbraddez.github.io/exams-made-easy/" + link.href;
+    a.href = link.href;
     a.textContent = link.text;
     subjectLinksDiv.appendChild(a);
 });
