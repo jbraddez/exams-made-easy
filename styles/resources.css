@@ -96,21 +96,77 @@ p{
 }
 
 #resourceList {
-    list-style: none;
     padding-left: 0;
 }
 
 #resourceList li {
     margin: 5px 0;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-#resourceList li.editable {
+.editable {
     border: 1px dashed #46a5d9;
     border-radius: 5px;
     padding: 5px;
+    outline: none;
+}
+
+#resourceList ul{
+    outline: none;
+}
+
+.url-field{
+    margin-left: 10px;
+    padding: 3px;
+    outline: none;
+    border: 1px solid #242827;
+    background: rgba(254, 254, 254,0.35);
+    color: #242827;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+li input{
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #242827;
+    background: rgba(254, 254, 254,0.35);
+    color: #242827;
+    margin: 2px 5px;
+    max-width: 200px;
+}
+
+.add-link-button{
+    margin: 10px 0;
+    padding: 3px 5px;
+    background-color: #4CAF50;
+    fill: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 1rem;
+}
+
+.delete-button{
+    margin-left: 10px;
+    padding: 3px 5px;
+    font-size: 14px;
+    line-height: 1rem;
+    background-color: #ff4d4d;
+    border-radius: 5px;
+    fill: white;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleEditMode, #addList{
+    align-self: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#toggleEditMode{
+    margin-top: 10px;
 }
 
 #resourceList li .controls {
