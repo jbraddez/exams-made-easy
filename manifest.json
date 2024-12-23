@@ -1,0 +1,17 @@
+{
+    "name": "Exams Made Easy",
+    "short_name": "ExamsMadeEasy",
+    "description": "A simple and easy way to revise and store your resources all in one place.",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fefefe",
+    "theme_color": "#46a5d9",
+    "icons": [
+        {
+        "src": "/images/webicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}
+  
