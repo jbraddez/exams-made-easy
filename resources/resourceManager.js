@@ -14,6 +14,7 @@ function loadData() {
         resourceList.innerHTML = savedData;
     }
     reattachDeleteButtons();
+    reattachAddLinkButton();
 }
 
 function saveData() {
@@ -42,7 +43,6 @@ function updateEditMode() {
             link.style.display = isEditMode ? "none" : "inline";
         });
 
-        // Show/hide the add link button based on edit mode
         list.querySelectorAll(".add-link-button").forEach(button => {
             button.style.display = isEditMode ? "inline-block" : "none";
         });     
@@ -62,9 +62,28 @@ function updateEditMode() {
             heading.contentEditable = isEditMode ? "true" : "false";  // Set contentEditable properly
         }
     });
-    
 
+    // Ensure the links and input fields are properly populated in edit mode
+    resourceList.querySelectorAll('li').forEach(listItem => {
+        const linkNameInput = listItem.querySelector('.link-name-field');
+        const linkUrlInput = listItem.querySelector('.link-url-field');
+        const pasteButton = listItem.querySelector('.paste-button');
+        
+        if (linkNameInput && linkUrlInput) {
+            linkNameInput.style.display = isEditMode ? "inline-block" : "none";
+            linkUrlInput.style.display = isEditMode ? "inline-block" : "none";
+            pasteButton.style.display = isEditMode ? "inline-block" : "none";
+
+            // Populate the input fields with the current link values
+            const link = listItem.querySelector('.link');
+            if (link) {
+                linkNameInput.value = link.textContent.trim() || '';
+                linkUrlInput.value = link.href || '';
+            }
+        }
+    });
 }
+
 
 toggleEditModeButton.addEventListener("click", () => {
     isEditMode = !isEditMode;
@@ -199,6 +218,86 @@ function reattachDeleteButtons() {
         });
     });
 }
+
+// Attach the "Add Link" button to each list that already exists when the page is loaded
+function reattachAddLinkButton() {
+    const addLinkButtons = document.querySelectorAll(".add-link-button");
+    addLinkButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const list = button.closest("ul"); // Get the closest UL to the button
+            const listItem = document.createElement("li");
+            listItem.classList.add("editable");
+            listItem.style.marginLeft = "20px";
+
+            // Create the link name and URL input fields (empty by default)
+            const linkNameInput = document.createElement("input");
+            linkNameInput.type = "text";
+            linkNameInput.placeholder = "Name";
+            linkNameInput.className = "link-name-field edit-fields"; 
+            linkNameInput.style.display = isEditMode ? "inline-block" : "none";
+
+            const linkUrlInput = document.createElement("input");
+            linkUrlInput.type = "text";
+            linkUrlInput.placeholder = "URL";
+            linkUrlInput.className = "link-url-field edit-fields";
+            linkUrlInput.style.display = isEditMode ? "inline-block" : "none";
+
+            // Create the paste button with SVG inside
+            const pasteBut = document.createElement("button");
+            pasteBut.className = "paste-button";
+            pasteBut.style.display = isEditMode ? "inline-block" : "none";
+            pasteBut.title = "Paste";
+            pasteBut.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M104.6 48L64 48C28.7 48 0 76.7 0 112L0 384c0 35.3 28.7 64 64 64l96 0 0-48-96 0c-8.8 0-16-7.2-16-16l0-272c0-8.8 7.2-16 16-16l16 0c0 17.7 14.3 32 32 32l72.4 0C202 108.4 227.6 96 256 96l62 0c-7.1-27.6-32.2-48-62-48l-40.6 0C211.6 20.9 188.2 0 160 0s-51.6 20.9-55.4 48zM144 56a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM448 464l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L464 243.9 464 448c0 8.8-7.2 16-16 16zM256 512l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1L256 128c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64z"/>
+                </svg>
+            `;
+
+            // Add event listener to paste the clipboard content into the URL input field
+            pasteBut.addEventListener("click", async () => {
+                try {
+                    const clipboardText = await navigator.clipboard.readText();  
+                    linkUrlInput.value = clipboardText; 
+                    const inputEvent = new Event("input");
+                    linkUrlInput.dispatchEvent(inputEvent);
+                } catch (err) {
+                    console.error('Failed to read clipboard contents: ', err);
+                }
+            });                 
+
+            // Create the actual <a> tag
+            const link = document.createElement("a");
+            link.href = ""; 
+            link.target = "_blank"; 
+            link.textContent = "Example Link"; 
+            link.classList.add("link"); 
+            link.style.display = isEditMode ? "none" : "inline";
+
+            linkNameInput.addEventListener("input", () => {
+                link.textContent = linkNameInput.value.trim() || "Example Link"; 
+                saveData(); 
+            });
+
+            linkUrlInput.addEventListener("input", () => {
+                let userInputUrl = linkUrlInput.value.trim();
+                if (userInputUrl && !userInputUrl.startsWith('http://') && !userInputUrl.startsWith('https://')) {
+                    userInputUrl = 'https://' + userInputUrl; 
+                }
+                link.href = userInputUrl; 
+                saveData(); 
+            });
+
+            listItem.appendChild(link);
+            listItem.appendChild(linkNameInput);
+            listItem.appendChild(linkUrlInput);
+            listItem.appendChild(pasteBut);
+
+            list.appendChild(listItem);
+            saveData();
+        });
+    });
+}
+
 
 // Initialize the page
 window.addEventListener("load", loadData);
