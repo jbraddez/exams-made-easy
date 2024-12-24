@@ -26,8 +26,6 @@ function updateEditMode() {
     addOptions.style.display = isEditMode ? "block" : "none";
 
     resourceList.querySelectorAll("ul").forEach(list => {
-        list.contentEditable = isEditMode;
-
         list.querySelectorAll(".edit-fields").forEach(inputFields => {
             inputFields.style.display = isEditMode ? "inline-block" : "none";
         });
@@ -47,8 +45,25 @@ function updateEditMode() {
         // Show/hide the add link button based on edit mode
         list.querySelectorAll(".add-link-button").forEach(button => {
             button.style.display = isEditMode ? "inline-block" : "none";
-        });
+        });     
+
+        list.querySelectorAll(".paste-button").forEach(button => {
+            button.style.display = isEditMode ? "inline-block" : "none";
+        });  
     });
+
+    // Loop through all lists to update contentEditable for headings
+    resourceList.querySelectorAll("ul").forEach(list => {
+        const headingContainer = list.querySelector("div");
+        const heading = headingContainer ? headingContainer.querySelector("span") : null;
+        
+        // Only set contentEditable for the first heading (or all headings if needed)
+        if (heading) {
+            heading.contentEditable = isEditMode ? "true" : "false";  // Set contentEditable properly
+        }
+    });
+    
+
 }
 
 toggleEditModeButton.addEventListener("click", () => {
@@ -67,6 +82,7 @@ addList.addEventListener("click", () => {
     headingContainer.style.alignItems = "center";
     headingContainer.style.justifyContent = "space-between"; 
     const heading = document.createElement("span"); 
+    heading.contentEditable = isEditMode ? true : false;
     heading.textContent = "List Heading";
     heading.style.fontWeight = "bold";
     headingContainer.appendChild(heading);
@@ -109,6 +125,28 @@ addList.addEventListener("click", () => {
         linkUrlInput.className = "link-url-field edit-fields";
         linkUrlInput.style.display = isEditMode ? "inline-block" : "none";
 
+        // Create the paste button with SVG inside
+        const pasteBut = document.createElement("button");
+        pasteBut.className = "paste-button";
+        pasteBut.style.display = isEditMode ? "inline-block" : "none";
+        pasteBut.title = "Paste";
+        // Create the SVG icon for the button (you can customize this as needed)
+        pasteBut.innerHTML = `
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M104.6 48L64 48C28.7 48 0 76.7 0 112L0 384c0 35.3 28.7 64 64 64l96 0 0-48-96 0c-8.8 0-16-7.2-16-16l0-272c0-8.8 7.2-16 16-16l16 0c0 17.7 14.3 32 32 32l72.4 0C202 108.4 227.6 96 256 96l62 0c-7.1-27.6-32.2-48-62-48l-40.6 0C211.6 20.9 188.2 0 160 0s-51.6 20.9-55.4 48zM144 56a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM448 464l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L464 243.9 464 448c0 8.8-7.2 16-16 16zM256 512l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1L256 128c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64z"/></svg>
+        `;
+
+        // Add event listener to paste the clipboard content into the URL input field
+        pasteBut.addEventListener("click", async () => {
+            try {
+                const clipboardText = await navigator.clipboard.readText();  
+                linkUrlInput.value = clipboardText; 
+                const inputEvent = new Event("input");
+                linkUrlInput.dispatchEvent(inputEvent);
+            } catch (err) {
+                console.error('Failed to read clipboard contents: ', err);
+            }
+        });                 
+
         // Create the actual <a> tag
         const link = document.createElement("a");
         link.href = ""; 
@@ -134,6 +172,7 @@ addList.addEventListener("click", () => {
         listItem.appendChild(link);
         listItem.appendChild(linkNameInput);
         listItem.appendChild(linkUrlInput);
+        listItem.appendChild(pasteBut);
 
         list.appendChild(listItem);
         saveData();
