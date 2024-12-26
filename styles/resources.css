@@ -150,6 +150,7 @@ li.editable{
     justify-content: start;
     gap: 5px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 li input{
