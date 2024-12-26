@@ -15,6 +15,9 @@ function loadData() {
     }
     reattachDeleteButtons();
     reattachAddLinkButton();
+
+    isEditMode = false;
+    updateEditMode();
 }
 
 function saveData() {
@@ -109,6 +112,7 @@ addList.addEventListener("click", () => {
     // Create the delete button with an icon
     const deleteButton = document.createElement("button");
     deleteButton.classList.add("delete-button");
+    deleteButton.classList.add("heading-delete-button");
     deleteButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m376-300 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 180q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520Zm-400 0v520-520Z"/></svg>`; // X icon
     deleteButton.style.display = isEditMode ? "inline-block" : "none"; 
     deleteButton.addEventListener("click", () => {
@@ -154,6 +158,17 @@ addList.addEventListener("click", () => {
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M104.6 48L64 48C28.7 48 0 76.7 0 112L0 384c0 35.3 28.7 64 64 64l96 0 0-48-96 0c-8.8 0-16-7.2-16-16l0-272c0-8.8 7.2-16 16-16l16 0c0 17.7 14.3 32 32 32l72.4 0C202 108.4 227.6 96 256 96l62 0c-7.1-27.6-32.2-48-62-48l-40.6 0C211.6 20.9 188.2 0 160 0s-51.6 20.9-55.4 48zM144 56a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM448 464l-192 0c-8.8 0-16-7.2-16-16l0-256c0-8.8 7.2-16 16-16l140.1 0L464 243.9 464 448c0 8.8-7.2 16-16 16zM256 512l192 0c35.3 0 64-28.7 64-64l0-204.1c0-12.7-5.1-24.9-14.1-33.9l-67.9-67.9c-9-9-21.2-14.1-33.9-14.1L256 128c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64z"/></svg>
         `;
 
+        const deleteButtonItem = document.createElement("button");
+        deleteButtonItem.classList.add("delete-button");
+        deleteButtonItem.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m376-300 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 180q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520Zm-400 0v520-520Z"/></svg>`;
+        deleteButtonItem.style.display = isEditMode ? "inline-block" : "none"; 
+    
+        deleteButtonItem.addEventListener("click", () => {
+            listItem.remove();
+            saveData(); // Save updated list to local storage
+        });
+    
+
         // Add event listener to paste the clipboard content into the URL input field
         pasteBut.addEventListener("click", async () => {
             try {
@@ -192,6 +207,7 @@ addList.addEventListener("click", () => {
         listItem.appendChild(linkNameInput);
         listItem.appendChild(linkUrlInput);
         listItem.appendChild(pasteBut);
+        listItem.appendChild(deleteButtonItem);
 
         list.appendChild(listItem);
         saveData();
@@ -207,10 +223,21 @@ addList.addEventListener("click", () => {
 
 // Reattach delete button functionality after page reload
 function reattachDeleteButtons() {
+    const headDeleteButtons = document.querySelectorAll('.heading-delete-button');
+    headDeleteButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const list = this.closest('ul');
+            if (list) {
+                list.remove();
+                saveData();
+            }
+        });
+    });
+
     const deleteButtons = document.querySelectorAll('.delete-button');
     deleteButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const list = this.closest('ul');
+            const list = this.closest('li');
             if (list) {
                 list.remove();
                 saveData();
@@ -302,3 +329,26 @@ function reattachAddLinkButton() {
 // Initialize the page
 window.addEventListener("load", loadData);
 window.addEventListener("beforeunload", saveData);
+
+const editModeBtn = document.getElementById('edit-mode-btn');
+const exitEditModeBtn = document.getElementById('exit-edit-mode-btn');
+const editModeElements = document.querySelector('.edit-mode');
+const nonEditModeElements = document.querySelector('.non-edit-mode');
+
+// Initialize page in non-edit mode
+window.addEventListener('DOMContentLoaded', () => {
+    editModeElements.style.display = 'none';
+    nonEditModeElements.style.display = 'block';
+});
+
+// Enter edit mode
+editModeBtn.addEventListener('click', () => {
+    editModeElements.style.display = 'block';
+    nonEditModeElements.style.display = 'none';
+});
+
+// Exit edit mode
+exitEditModeBtn.addEventListener('click', () => {
+    editModeElements.style.display = 'none';
+    nonEditModeElements.style.display = 'block';
+});
