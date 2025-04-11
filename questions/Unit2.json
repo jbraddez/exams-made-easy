@@ -1,0 +1,154 @@
+{
+    "questions": [
+       {
+         "question": "Which is not a logical protection method?",
+         "options": [
+           "Tiered Levels of Access",
+           "Encryption",
+           "Firewalls",
+           "Biometrics"
+         ],
+         "correct_answer": "Biometrics"
+       },
+       {
+        "question": "Which is not a physical protection method?",
+        "options": [
+          "RFID",
+          "Locks",
+          "Obfuscation",
+          "Shredding"
+        ],
+        "correct_answer": "Obfuscation"
+      },
+      {
+        "question": "Which example is a loss of Intellectual Property?",
+        "options": [
+          "Designs for a new prototype could be stolen and copied or deleted",
+          "Failing to meet moral and legal obligations and losing personal data",
+          "Attacking a business’ servers will impact that business as well as any third parties",
+          "A direct physical threat to a country or a threat to the financial security of the state"
+        ],
+        "correct_answer": "Designs for a new prototype could be stolen and copied or deleted"
+      },
+      {
+        "question": "Which is a principle of information security (CIA Triad)?",
+        "options": [
+          "Accessibility",
+          "Availability",
+          "Responsibility",
+          "Accuracy"
+        ],
+        "correct_answer": "Availability"
+      },
+      {
+        "question": "Which is not in a data flow diagram?",
+        "options":[
+            "Process",
+            "Data store",
+            "External Entity",
+            "Organisation"
+        ],
+        "correct_answer": "Organisation"
+      },
+      {
+        "question": "Which is not a rule in DFDs (Data Flow Diagrams)?",
+        "options":[
+            "Every data flow is labelled",
+            "Every data flow connects to at least one process",
+            "Data flows only in one direction",
+            "Every data flow must go to or from a data store"
+        ],
+        "correct_answer": "Every data flow must go to or from a data store"
+      },
+      {
+        "question": "What does RIPA stand for?",
+        "options":[
+            "Regulation of Investigatory Powers Act",
+            "Regulation of Internet Protection Act",
+            "Regulation of Internet Powers Act",
+            "Regulation of Investigary Protection Act"
+        ],
+        "correct_answer": "Regulation of Investigatory Powers Act"
+      },
+      {
+        "question": "What legislation provides the public with the right to access information about activities carried out by public authorities.",
+        "options":[
+            "Copyright, Designs and Patents Act 1988",
+            "General Data Protection Regulation",
+            "Computer Misuse Act 1990",
+            "Freedom of Information Act 2000"
+        ],
+        "correct_answer": "Freedom of Information Act 2000"
+      },
+      {
+        "question": "What is greenwashing?",
+        "options":[
+            "Someone (typically a company) pretending to be greener than they actually are",
+            "A method of cleaning computer hardware using eco-friendly products.",
+            "An online scam where fake environmental charities ask for donations.",
+            "A technique for recycling old computer components into new ones."
+        ],
+        "correct_answer": "Someone (typically a company) pretending to be greener than they actually are"
+      },
+      {
+        "question": "How could a company implement green computing?",
+        "options":[
+            "Using energy star labelled products - energy efficiency rating",
+            "Only using computers at night when electricity is cheaper",
+            "Disabling all security features to make devices run faster",
+            "Installing more RGB lighting to brighten up the workspace"
+        ],
+        "correct_answer": "Using energy star labelled products - energy efficiency rating"
+      },
+      {
+        "question": "Which is not a stage of data analysis?",
+        "options":[
+            "Record and store information",
+            "Select the most appropriate tools",
+            "Identify potential sources",
+            "Identify appropriate analysis methods"
+        ],
+        "correct_answer": "Identify appropriate analysis methods"
+      },
+      {
+        "question": "What does GIS stand for?",
+        "options":[
+            "Geographic Information Systems",
+            "Graphichal Information Systems",
+            "Global Information Systems",
+            "Global Internet Safety"
+        ],
+        "correct_answer": "Geographic Information Systems"
+      },
+      {
+        "question": "What would a customers address be classified as?",
+        "options":[
+            "Private",
+            "Sensitive",
+            "Confidential",
+            "Public"
+        ],
+        "correct_answer": "Private"
+      },
+      {
+        "question": "Which is not a characteristic of good quality information?",
+        "options":[
+            "Valid",
+            "Biased",
+            "Reliable",
+            "Accurate"
+        ],
+        "correct_answer": "Biased"
+      },
+      {
+        "question": "Identify the Act that requires internet service providers to keep a log of their customers’ use.",
+        "options":[
+            "Regulation of Investigatory Powers Act (RIPA)",
+            "UK General Data Protection Act (GDPR)",
+            "Freedom of Information Act",
+            "Computer Misuse Act"
+        ],
+        "correct_answer": "Regulation of Investigatory Powers Act (RIPA)"
+      }
+    ]
+}
