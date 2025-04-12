@@ -66,7 +66,7 @@
             "Regulation of Investigatory Powers Act",
             "Regulation of Internet Protection Act",
             "Regulation of Internet Powers Act",
-            "Regulation of Investigary Protection Act"
+            "Regulation of Investigatory Protection Act"
         ],
         "correct_answer": "Regulation of Investigatory Powers Act"
       },
@@ -149,6 +149,86 @@
             "Computer Misuse Act"
         ],
         "correct_answer": "Regulation of Investigatory Powers Act (RIPA)"
+      },
+      {
+        "question": "Which best describes primary data?",
+        "options":[
+            "Information collected firsthand by the researcher for their specific research question",
+            "Information that has been generated from within a business through its operations",
+            "Information that has already been collected by someone else for a different purpose",
+            "Information gathered from websites, books, or reports written by others"
+        ],
+        "correct_answer": "Information collected firsthand by the researcher for their specific research question"
+      },
+      {
+        "question": "What's one advantage of a business using separate tables for customers and staff?",
+        "options":[
+            "Access to each table can be different for different roles",
+            "The amount of duplicate data stored may increase",
+            "It makes the database load slower",
+            "Customers and staff can be contacted using the same contact details"
+        ],
+        "correct_answer": "Access to each table can be different for different roles"
+      },
+      {
+        "question": "Which is an example of quantitative data?",
+        "options":[
+            "Sales figures",
+            "Customer reviews describing experience",
+            "Observations about customer behaviour in a shop",
+            "Open-ended survey answers from customers"
+        ],
+        "correct_answer": "Sales figures"
+      },
+      {
+        "question": "Which is an example of qualitative data?",
+        "options":[
+            "Customer reviews describing experience",
+            "Sales figures",
+            "Customer satisfaction ratings (scale of 1-5)",
+            "Time spent browsing the comapany website"
+        ],
+        "correct_answer": "Customer reviews describing experience"
+      },
+      {
+        "question": "Identify the ICO code of practice that relates to how customers' data can be used between organisations.",
+        "options":[
+            "Data sharing",
+            "Data retention",
+            "Information security",
+            "Marketing consent"
+        ],
+        "correct_answer": "Data sharing"
+      },
+      {
+        "question": "Which best describes 'Integrity'?",
+        "options":[
+            "Data is up to date, accurate and fit for purpose",
+            "Information is always accessible to those who require it",
+            "Information is only accessible by authorised users",
+            "Information is stored in a secure location to prevent unauthorized access"
+        ],
+        "correct_answer": "Data is up to date, accurate and fit for purpose"
+      },
+      {
+        "question": "Identify the type of information storage media in which a memory stick would be included.",
+        "options":[
+            "Solid state",
+            "Paper",
+            "Optical",
+            "Magnetic"
+        ],
+        "correct_answer": "Solid state"
+      },
+      {
+        "question": "What best describes a closed system?",
+        "options":[
+            "A system available to only certain people, with restricted access and no access to the public internet.",
+            "A system available to all people, with restricted access and no access to the public internet.",
+            "A system available to only certain people, with full access to the public internet.",
+            "A system available to all people, with full access to the public internet."
+        ],
+        "correct_answer": "A system available to only certain peopl, with restricted access and no access to the public internet."
       }
     ]
 }
