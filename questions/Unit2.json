@@ -229,6 +229,354 @@
             "A system available to all people, with full access to the public internet."
         ],
         "correct_answer": "A system available to only certain people, with restricted access and no access to the public internet."
+      },
+      {
+        "question": "Which is a characteristic of an intranet?",
+        "options":[
+            "Public",
+            "Private"
+        ],
+        "correct_answer": "Private"
+      },
+      {
+        "question": "Which of these is not a category of information holder?",
+        "options":[
+            "NHS",
+            "Business",
+            "Government",
+            "Individual"
+        ],
+        "correct_answer": "NHS"
+      },
+      {
+        "question": "Which type of internet connection would be most reliable in a warzone?",
+        "options":[
+            "Satellite",
+            "Mobile data",
+            "Wifi",
+            "Landline"
+        ],
+        "correct_answer": "Satellite"
+      },
+      {
+        "question": "Which of the these is an advantage of using paper?",
+        "options":[
+            "Accessibility",
+            "Low capacity",
+            "Difficult to edit/update",
+            "Easily damaged"
+        ],
+        "correct_answer": "Accessibility"
+      },
+      {
+        "question": "Which of these is classified as a shared device?",
+        "options":[
+            "Database",
+            "Desktop computer",
+            "Smart TV",
+            "eBook reader"
+        ],
+        "correct_answer": "Database"
+      },
+      {
+        "question": "Which one of these networks allow password protected connections from outside an organisation?",
+        "options":[
+            "Extranet",
+            "Intranet",
+            "Internet",
+            "Dark web"
+        ],
+        "correct_answer": "Extranet"
+      },
+      {
+        "question": "What does latency mean?",
+        "options":[
+            "Delay",
+            "Maximun amount of data",
+            "Shared with other users",
+            "Strength"
+        ],
+        "correct_answer": "Delay"
+      },
+      {
+        "question": "What's the advantage of copper over fibre?",
+        "options":[
+            "Maluable",
+            "Lower bandwidth",
+            "Faster",
+            "More attenuation"
+        ],
+        "correct_answer": "Maluable"
+      },
+      {
+        "question": "Which of these don't require line of sight?",
+        "options":[
+            "Fibre",
+            "Satellite",
+            "Laser",
+            "Microwave"
+        ],
+        "correct_answer": "Fibre"
+      },
+      {
+        "question": "What inforamtion format is most suitable for an online diary?",
+        "options":[
+            "Blog",
+            "Podcast",
+            "RSS",
+            "Webpage"
+        ],
+        "correct_answer": "Blog"
+      },
+      {
+        "question": "How would you describe medical data that could be embarrassing?",
+        "options":[
+            "Sensitive",
+            "Private",
+            "Confidential",
+            "Classified"
+        ],
+        "correct_answer": "Sensitive"
+      },
+      {
+        "question": "What is a characteristic of data?",
+        "options":[
+            "Unprocessed",
+            "Organised",
+            "Structured",
+            "In context"
+        ],
+        "correct_answer": "Unprocessed"
+      },
+      {
+        "question": "What is an advantage of open information systems?",
+        "options":[
+            "Can interact with other information systems",
+            "Higher risk of data loss",
+            "Private",
+            "Access is limited"
+        ],
+        "correct_answer": "Can interact with other information systems"
+      },
+      {
+        "question": "What is big data?",
+        "options":[
+            "Any data too large for traditional data analysis techniques",
+            "Data used for making important decisions",
+            "Anything written in a large font",
+            "Data used by the Business Information Group in your organisation"
+        ],
+        "correct_answer": "Any data too large for traditional data analysis techniques"
+      },
+      {
+        "question": "Which process involves keeping data safe in line with laws such as the DPA and GDPR?",
+        "options": [
+        "Storing Information",
+        "Securing Data",
+        "Transmitting Data",
+        "Retrieving Information"
+        ],
+        "correct_answer": "Securing Data"
+      },
+      {
+        "question": "Which stage involves reviewing data to help make informed decisions?",
+        "options": [
+        "Analysis",
+        "Manipulating and processing",
+        "Collecting Information",
+        "Transmitting Data"
+        ],
+        "correct_answer": "Analysis"
+      },
+      {
+        "question": "Which stage is about sending the data elsewhere, such as to other systems or people?",
+        "options": [
+        "Securing Data",
+        "Transmitting Data",
+        "Retrieving Information",
+        "Collecting Information"
+        ],
+        "correct_answer": "Transmitting Data"
+      },
+      {
+        "question": "What is the main focus of the 'Impact of Information on Stakeholders'?",
+        "options": [
+        "Sending information between departments",
+        "Ensuring only authorised people can access data",
+        "Understanding how information affects the people involved",
+        "Collecting large volumes of customer data"
+        ],
+        "correct_answer": "Understanding how information affects the people involved"
+      },    
+      {
+        "question": "What is the role of the EDPB and which countries are members?",
+        "options": [
+          "It enforces copyright laws across the EU and includes only EU member states",
+          "It manages data privacy for companies globally and includes all UN members",
+          "It ensures consistent application of GDPR and law enforcement data protection across the EEA",
+          "It creates new cybersecurity laws for all European countries including the UK"
+        ],
+        "correct_answer": "It ensures consistent application of GDPR and law enforcement data protection across the EEA"
+      },
+      {
+        "question": "What is the purpose of the 'Identify the Need' stage in a data analysis project?",
+        "options": [
+          "To choose the right software tools to visualise the data",
+          "To find out what needs to be learned and what information is required",
+          "To compare the data with historical trends",
+          "To record all findings and store them for future use"
+        ],
+        "correct_answer": "To find out what needs to be learned and what information is required"
+      },
+      {
+        "question": "What does the 'Define Scope' stage focus on?",
+        "options": [
+          "Setting limits like budget and deadlines for the project",
+          "Recording the results and storing them securely",
+          "Choosing suitable interview questions for participants",
+          "Selecting appropriate data visualisation methods"
+        ],
+        "correct_answer": "Setting limits like budget and deadlines for the project"
+      },
+      {
+        "question": "What is the main goal of the 'Source and Select Information' stage?",
+        "options": [
+          "To present data using visual tools like charts and graphs",
+          "To record final results and publish them for stakeholders",
+          "To gather and filter out unsuitable or biased information",
+          "To define project deadlines and budget restrictions"
+        ],
+        "correct_answer": "To gather and filter out unsuitable or biased information"
+      },        
+      {
+        "question": "",
+        "options":[
+            "",
+            "",
+            "",
+            ""
+        ],
+        "correct_answer": ""
+      },
+      {
+        "question": "Which of the following is an advantage of the internet for individuals?",
+        "options": [
+          "Potential for identity theft",
+          "Threats caused by malicious attacks",
+          "Access to internet banking 24/7",
+          "Cost of maintaining websites"
+        ],
+        "correct_answer": "Access to internet banking 24/7"
+      },
+      {
+        "question": "What is a disadvantage of the internet for organisations?",
+        "options": [
+          "Ability to accept donations 24/7",
+          "Speed of personal communication",
+          "Threats caused by malicious attacks",
+          "Easy access to information"
+        ],
+        "correct_answer": "Threats caused by malicious attacks"
+      },
+      {
+        "question": "Which is an advantage of the internet for organisations?",
+        "options": [
+          "Cost of maintaining websites and data stores",
+          "Share large amounts of information quickly between countries",
+          "Potential for identity theft",
+          "Cost of data connection"
+        ],
+        "correct_answer": "Share large amounts of information quickly between countries"
+      },
+      {
+        "question": "Which of the following is classed as a handheld device?",
+        "options": [
+          "Smartphone",
+          "Laptop",
+          "Smart TV",
+          "Database server"
+        ],
+        "correct_answer": "Smartphone"
+      },
+      {
+        "question": "Which device is an example of a shared device?",
+        "options": [
+          "Smartwatch",
+          "Cloud storage",
+          "Desktop computer",
+          "Large tablet"
+        ],
+        "correct_answer": "Cloud storage"
+      },
+      {
+        "question": "What type of device is a games console typically classed as?",
+        "options": [
+          "Portable device",
+          "Fixed device",
+          "Handheld device",
+          "Shared device"
+        ],
+        "correct_answer": "Fixed device"
+      },
+      {
+        "question": "What is the purpose of a firewall in a network?",
+        "options": [
+          "To store website addresses",
+          "To measure internet speed",
+          "To prevent malicious or unauthorised access",
+          "To send data packets across networks"
+        ],
+        "correct_answer": "To prevent malicious or unauthorised access"
+      },
+      {
+        "question": "What does a router do in a network?",
+        "options": [
+          "Blocks inappropriate websites",
+          "Shifts data packets from one network to another",
+          "Stores all web addresses",
+          "Monitors bandwidth usage"
+        ],
+        "correct_answer": "Shifts data packets from one network to another"
+      },
+      {
+        "question": "Which of the following best describes 'Ping of Death'?",
+        "options": [
+          "A method of encrypting data",
+          "A type of malware that steals data",
+          "A denial-of-service attack that overwhelms a server with requests",
+          "A tool used to test internet speed"
+        ],
+        "correct_answer": "A denial-of-service attack that overwhelms a server with requests"
+      },
+      {
+        "question": "Which term refers to the competition for resources on a shared network connection?",
+        "options": [
+          "Bandwidth",
+          "Storage capacity",
+          "Contention",
+          "Range"
+        ],
+        "correct_answer": "Contention"
+      },
+      {
+        "question": "What is latency in a network connection?",
+        "options": [
+          "The amount of data that can be transferred at once",
+          "The time it takes for data to travel between devices",
+          "The maximum distance a connection can maintain",
+          "The strength of the signal"
+        ],
+        "correct_answer": "The time it takes for data to travel between devices"
+      },
+      {
+        "question": "Which of the following is true about range in a network connection?",
+        "options": [
+          "Measured in dB for wireless connections",
+          "Longer range offers less flexibility in device placement",
+          "Measured in meters or kilometers for wireless connections",
+          "Higher range reduces the signal quality"
+        ],
+        "correct_answer": "Measured in meters or kilometers for wireless connections"
       }
     ]
 }
