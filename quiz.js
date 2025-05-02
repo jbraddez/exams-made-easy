@@ -142,18 +142,14 @@ nextButton.addEventListener("click", function () {
 });
 
 function updateScoreDisplay() {
-    if (!scoreDisplay) {
-      const scoreElement = document.createElement("p");
-      scoreElement.id = "score-display";
-      scoreElement.style.marginTop = "20px";
-      questionContainer.appendChild(scoreElement);
-    }
     const scoreDisplayElement = document.getElementById("score-display");
     const overallPercentage = totalQuestions > 0 ? ((totalCorrect / totalQuestions) * 100).toFixed(2) : 0;
 
     scoreDisplayElement.innerHTML = `
-      Current score: ${sessionCorrect} / ${currentTotal}<br>
-      Total score: ${totalCorrect} / ${totalQuestions} (${overallPercentage}%)
+      W - L<br>
+      ${sessionCorrect} - ${currentTotal-sessionCorrect}<br>
+      ${totalCorrect} - ${totalQuestions-totalCorrect}<br>
+      ${overallPercentage}%
     `;
   }
   

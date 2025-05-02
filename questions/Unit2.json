@@ -567,6 +567,44 @@
           "Higher range reduces the signal quality"
         ],
         "correct_answer": "Measured in meters or kilometers for wireless connections"
+      },
+      {
+        "question": "What information format is a webpage containing an interactive form?",
+        "options": [
+         "Dynamic webpage",
+         "Static webpage",
+         "Webform",
+         "Blog"
+        ],
+        "correct_answer": "Dynamic webpage"
+      },
+      {
+        "question": "Identify a type visualisation of data analysis tools.",
+        "options": [
+         "Chart",
+         "Graph",
+         "Bar chart"
+        ],
+        "correct_answer": "Bar chart"
+      },
+      {
+        "question": "Identify a characteristic of an extranet",
+        "options": [
+         "Part shared access",
+         "Open access",
+         "Closed access"
+        ],
+        "correct_answer": "Part shared access"
+      },
+      {
+        "question": "What best describes data cleaning?",
+        "options": [
+         "Removing old, outdated/inaccurate records to have up to date and accurate information",
+        "Backing up all records to an external hard drive",
+        "Sharing records with unauthorized users for transparency",
+        "Converting all paper records into decorative posters"
+        ],
+        "correct_answer": "Removing old, outdated/inaccurate records to have up to date and accurate information"
       }
     ]
 }

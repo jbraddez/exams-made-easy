@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 main{
     padding: 8px;
     text-align: center;
@@ -74,4 +75,8 @@ button{
     ul li{
         font-size: 0.87rem;
     }
+}
+
+#score-display{
+    font-family: "Azeret Mono", monospace;
 }
