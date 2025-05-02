@@ -144,10 +144,12 @@ nextButton.addEventListener("click", function () {
 function updateScoreDisplay() {
     const scoreDisplayElement = document.getElementById("score-display");
     const overallPercentage = totalQuestions > 0 ? ((totalCorrect / totalQuestions) * 100).toFixed(2) : 0;
+    const currentPercentage = totalQuestions > 0 ? ((sessionCorrect / currentTotal) * 100).toFixed(2) : 0;
 
     scoreDisplayElement.innerHTML = `
       W - L<br>
       ${sessionCorrect} - ${currentTotal-sessionCorrect}<br>
+      ${currentPercentage}%<br>
       ${totalCorrect} - ${totalQuestions-totalCorrect}<br>
       ${overallPercentage}%
     `;
